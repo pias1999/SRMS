@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/student_logoutbutton"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Log Out"
+            android:clickable="true"/>
+
+        <ImageButton
+            android:id="@+id/class_enrol_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@mipmap/class_enrol" />
+
+        <TextView
+            android:id="@+id/class_enrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Enrol to a new class"
+            android:clickable="true"/>
+
+        <ImageButton
+            android:id="@+id/grades_check_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@mipmap/grades" />
+
+        <TextView
+            android:id="@+id/geades_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Check course progress"
+            android:clickable="true"/>
+
+        <ImageButton
+            android:id="@+id/request_review_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@mipmap/request" />
+
+        <TextView
+            android:id="@+id/request_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Request re-evaluation"
+            android:clickable="true"/>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.srms">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SRMS">
+        <activity
+            android:name=".ClassEnrolSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RevReqSentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MakeRevReqActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClassEnrollmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProgressReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewSectionCreatedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewAnnouncementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MarkUpdatedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MarkPushedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateNewClassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AssessmentMarksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnnouncementCreatedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentBasicInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FacultySignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateMarksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FacultyLoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StudentLoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
