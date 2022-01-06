@@ -32,7 +32,7 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/student_fullname"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -50,7 +50,7 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/student_dept"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -67,7 +67,7 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/stu_fathers_name"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -86,7 +86,7 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/stu_mothers_name"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -105,7 +105,7 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/stu_guardians_contact"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -123,7 +123,7 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/students_contact"
                 android:layout_width="300dp"
                 android:layout_height="50dp"

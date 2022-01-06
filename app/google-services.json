@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "675807121299",
+    "project_id": "srmsdatabase",
+    "storage_bucket": "srmsdatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675807121299:android:121a216a6bc0cdccf2a266",
+        "android_client_info": {
+          "package_name": "com.example.srms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675807121299-4dk5pq4i5vgivjbq7ac65d4r4k3v9i69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz6dJUqt-4qr2WyVlxZwGmgSAU8CFEo0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675807121299-4dk5pq4i5vgivjbq7ac65d4r4k3v9i69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
