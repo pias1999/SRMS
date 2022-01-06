@@ -33,7 +33,7 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/course_title"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -50,7 +50,7 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/course_code"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -68,7 +68,7 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/section"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -86,7 +86,7 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/instructor"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -98,7 +98,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/facuulty_loginbutton"
+            android:id="@+id/create_class_button"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
