@@ -9,7 +9,7 @@ public class StBasicInfo {
         public String guardcont;
         public String studcont;
 
-        public StBasicInfo(String s, String toString, String string, String s1) {
+        public StBasicInfo(String s, String toString, String string) {
         }
 
         public StBasicInfo(String fullname, String dept, String fathersname, String mothersname, String guardcont, String studcont) {

@@ -32,7 +32,7 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/student_id_signup"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -50,7 +50,7 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/student_email"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -70,7 +70,7 @@
             app:boxStrokeWidthFocused="0dp"
             app:passwordToggleEnabled="true">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/student_password_signup"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -89,7 +89,7 @@
             app:boxStrokeWidthFocused="0dp"
             app:passwordToggleEnabled="true">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/student_conf_password"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
