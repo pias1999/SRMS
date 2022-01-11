@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -45,12 +46,25 @@ public class StudentBasicInfoActivity extends AppCompatActivity {
                 String mothersname = inputMothersname.getText().toString();
                 String guardcont = inputGuardcont.getText().toString();
                 String studcont = inputStudcont.getText().toString();
+                if (TextUtils.isEmpty(inputFullname.getText())) {
+                    inputFullname.setError("This field is required");
+                } else if (TextUtils.isEmpty(inputDept.getText())) {
+                    inputDept.setError("This field is required");
+                } else if (TextUtils.isEmpty(inputFathersname.getText())) {
+                    inputFathersname.setError("This field is required");
+                } else if (TextUtils.isEmpty(inputMothersname.getText())) {
+                    inputMothersname.setError("This field is required");
+                } else if (TextUtils.isEmpty(inputGuardcont.getText())) {
+                    inputGuardcont.setError("This field is required");
+                } else if (TextUtils.isEmpty(inputStudcont.getText())) {
+                    inputStudcont.setError("This field is required");
+                } else {
+                    createStBasicInfo(fullname, dept, fathersname, mothersname, guardcont, studcont);
 
-                createStBasicInfo(fullname, dept, fathersname, mothersname, guardcont, studcont);
-
-                Intent i = new Intent(StudentBasicInfoActivity.this, StudentSignupActivity.class);
-                startActivity(i);
-            }
+                    Intent i = new Intent(StudentBasicInfoActivity.this, StudentSignupActivity.class);
+                    startActivity(i);
+                }
+                    }
         });
     }
 

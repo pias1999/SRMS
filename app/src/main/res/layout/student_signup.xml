@@ -94,14 +94,14 @@
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:hint="Confirm Password"
                 android:background="@drawable/textview_borders"
-                android:inputType="textPassword"/>
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/student_signupbutton"
+            android:id="@+id/student_signupbt"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
