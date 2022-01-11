@@ -14,7 +14,7 @@ public class FacultyLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.faculty_login);
 
-        /*TextView fl1 = (TextView) findViewById(R.id.faculty_loginbutton);
+        TextView fl1 = (TextView) findViewById(R.id.faculty_loginbutton);
         fl1.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -22,7 +22,7 @@ public class FacultyLoginActivity extends AppCompatActivity {
                 Intent i = new Intent(FacultyLoginActivity.this, FacultyHomeActivity.class);
                 startActivity(i);
             }
-        });*/
+        });
 
         TextView fl2 = (TextView) findViewById(R.id.faculty_create_account);
         fl2.setOnClickListener(new View.OnClickListener() {

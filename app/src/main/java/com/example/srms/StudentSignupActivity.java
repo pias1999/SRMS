@@ -52,6 +52,9 @@ public class StudentSignupActivity extends AppCompatActivity {
 
                     createStSignup(stid, stemail, stpassword);
 
+                    Toast.makeText(getApplicationContext(), "Sign Up successful!",
+                            Toast.LENGTH_LONG).show();
+
                     Intent i = new Intent(StudentSignupActivity.this, StudentLoginActivity.class);
                     startActivity(i);
                 }else{

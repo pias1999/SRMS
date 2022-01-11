@@ -19,7 +19,7 @@ public class ClassEnrolSuccessActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(ClassEnrolSuccessActivity.this, ClassEnrollmentActivity.class);
+                Intent i = new Intent(ClassEnrolSuccessActivity.this, FacultyHomeActivity.class);
                 startActivity(i);
             }
         });

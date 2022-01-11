@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -59,7 +60,12 @@ public class StudentBasicInfoActivity extends AppCompatActivity {
                 } else if (TextUtils.isEmpty(inputStudcont.getText())) {
                     inputStudcont.setError("This field is required");
                 } else {
+
                     createStBasicInfo(fullname, dept, fathersname, mothersname, guardcont, studcont);
+
+                    Toast.makeText(getApplicationContext(), "Data submitted successfully!",
+                            Toast.LENGTH_LONG).show();
+
 
                     Intent i = new Intent(StudentBasicInfoActivity.this, StudentSignupActivity.class);
                     startActivity(i);
