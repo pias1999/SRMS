@@ -67,9 +67,9 @@ public class StudentSignupActivity extends AppCompatActivity {
     }
 
     private void createStSignup(String stid, String stemail, String stpassword) {
-        String key = mFirebaseDatabase.push().getKey();
+        //String key = mFirebaseDatabase.push().getKey();
         StSignup newStSignup = new StSignup(inputStid.getText().toString(), inputStemail.getText().toString(), inputStpassword.getText().toString());
-        mFirebaseDatabase.child(key).setValue(newStSignup);
+        mFirebaseDatabase.child(stid).setValue(newStSignup);
         finish();
     }
 }
