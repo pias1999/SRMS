@@ -118,7 +118,7 @@ public class FacultyLoginActivity extends AppCompatActivity {
 
                         progressBar.setVisibility(View.GONE);
 
-                        Intent intent = new Intent(getApplicationContext(), StudentHomeActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), FacultyHomeActivity.class);
                         startActivity(intent);
 
                     } else {
