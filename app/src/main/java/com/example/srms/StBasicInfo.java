@@ -2,6 +2,7 @@ package com.example.srms;
 
 public class StBasicInfo {
 
+        public String stid;
         public String fullname;
         public String dept;
         public String fathersname;
@@ -9,17 +10,24 @@ public class StBasicInfo {
         public String guardcont;
         public String studcont;
 
-        public StBasicInfo(String s, String toString, String string) {
-        }
 
-        public StBasicInfo(String fullname, String dept, String fathersname, String mothersname, String guardcont, String studcont) {
-            this.fullname = fullname;
-            this.dept = dept;
-            this.fathersname = fathersname;
-            this.mothersname = mothersname;
-            this.guardcont = guardcont;
-            this.studcont = studcont;
-        }
+    public StBasicInfo(String stid, String fullname, String dept, String fathersname, String mothersname, String guardcont, String studcont) {
+        this.stid = stid;
+        this.fullname = fullname;
+        this.dept = dept;
+        this.fathersname = fathersname;
+        this.mothersname = mothersname;
+        this.guardcont = guardcont;
+        this.studcont = studcont;
+    }
+
+    public String getStid() {
+        return stid;
+    }
+
+    public void setStid(String stid) {
+        this.stid = stid;
+    }
 
     public String getFullname() {
         return fullname;
