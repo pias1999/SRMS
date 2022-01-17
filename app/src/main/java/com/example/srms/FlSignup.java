@@ -2,6 +2,7 @@ package com.example.srms;
 
 public class FlSignup {
 
+    public String flid;
     public String flfullname;
     public String flemail;
     public String flpassword;
@@ -9,10 +10,19 @@ public class FlSignup {
     public FlSignup() {
     }
 
-    public FlSignup(String flfullname, String flemail, String flpassword) {
+    public FlSignup(String flid, String flfullname, String flemail, String flpassword) {
+        this.flid = flid;
         this.flfullname = flfullname;
         this.flemail = flemail;
         this.flpassword = flpassword;
+    }
+
+    public String getFlid() {
+        return flid;
+    }
+
+    public void setFlid(String flid) {
+        this.flid = flid;
     }
 
     public String getFlfullname() {
@@ -39,4 +49,3 @@ public class FlSignup {
         this.flpassword = flpassword;
     }
 }
-

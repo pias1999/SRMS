@@ -18,7 +18,7 @@ public class FacultySignupActivity extends AppCompatActivity {
     private DatabaseReference mFirebaseDatabase;
     private FirebaseDatabase mFirebaseInstance;
 
-    private EditText inputFlfullname, inputFlemail, inputFlpassword, inputFlConfPass;
+    private EditText inputFlid, inputFlfullname, inputFlemail, inputFlpassword, inputFlConfPass;
     private Button flSignupButton;
 
     @Override
@@ -26,6 +26,7 @@ public class FacultySignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.faculty_signup);
 
+        inputFlid = (EditText) findViewById(R.id.Sflid);
         inputFlfullname = (EditText) findViewById(R.id.faculty_fullname);
         inputFlemail = (EditText) findViewById(R.id.Sfaculty_email);
         inputFlpassword = (EditText) findViewById(R.id.Sfaculty_pass);
@@ -38,10 +39,13 @@ public class FacultySignupActivity extends AppCompatActivity {
         flSignupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String flid = inputFlid.getText().toString();
                 String flfullname = inputFlfullname.getText().toString();
                 String flemail = inputFlemail.getText().toString();
                 String flpassword = inputFlpassword.getText().toString();
-                if (TextUtils.isEmpty(inputFlfullname.getText())) {
+                if (TextUtils.isEmpty(inputFlid.getText())) {
+                    inputFlid.setError("This field is required");
+                } else if (TextUtils.isEmpty(inputFlfullname.getText())) {
                     inputFlfullname.setError("This field is required");
                 } else if (TextUtils.isEmpty(inputFlemail.getText())) {
                     inputFlemail.setError("This field is required");
@@ -49,7 +53,7 @@ public class FacultySignupActivity extends AppCompatActivity {
                     inputFlpassword.setError("This field is required");
                 } else if(inputFlpassword.getText().toString().equals( inputFlConfPass.getText().toString())) {
 
-                    createFlSignup(flfullname, flemail, flpassword);
+                    createFlSignup(flid, flfullname, flemail, flpassword);
 
                     Toast.makeText(getApplicationContext(), "Sign Up successful!",
                             Toast.LENGTH_LONG).show();
@@ -65,10 +69,10 @@ public class FacultySignupActivity extends AppCompatActivity {
         });
     }
 
-    private void createFlSignup(String flfullname, String flemail, String flpassword) {
+    private void createFlSignup(String flid, String flfullname, String flemail, String flpassword) {
         //String key = mFirebaseDatabase.push().getKey();
-        FlSignup newFlSignup = new FlSignup(inputFlfullname.getText().toString(), inputFlemail.getText().toString(), inputFlpassword.getText().toString());
-        mFirebaseDatabase.child(flemail).setValue(newFlSignup);
+        FlSignup newFlSignup = new FlSignup(inputFlid.getText().toString(), inputFlfullname.getText().toString(), inputFlemail.getText().toString(), inputFlpassword.getText().toString());
+        mFirebaseDatabase.child(flid).setValue(newFlSignup);
         finish();
     }
 }
