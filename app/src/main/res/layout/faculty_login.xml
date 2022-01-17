@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <TextView
+        <TextView
         android:id="@+id/login_note"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="40dp"
@@ -27,6 +27,7 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/flid"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="60dp"
@@ -34,7 +35,7 @@
             app:boxStrokeWidthFocused="0dp">
 
         <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/flid"
+        android:id="@+id/flid_login"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -46,6 +47,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/faculty_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
@@ -54,7 +56,7 @@
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/faculty_password"
+                android:id="@+id/faculty_password_login"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
