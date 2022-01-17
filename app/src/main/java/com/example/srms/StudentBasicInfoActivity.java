@@ -74,7 +74,7 @@ public class StudentBasicInfoActivity extends AppCompatActivity {
                     Intent i = new Intent(StudentBasicInfoActivity.this, StudentSignupActivity.class);
                     startActivity(i);
                 }
-                    }
+            }
         });
     }
 

@@ -28,8 +28,8 @@ public class FacultySignupActivity extends AppCompatActivity {
 
         inputFlfullname = (EditText) findViewById(R.id.faculty_fullname);
         inputFlemail = (EditText) findViewById(R.id.Sfaculty_email);
-        inputFlpassword = (EditText) findViewById(R.id.Sfaculty_password);
-        inputFlConfPass = (EditText) findViewById(R.id.Sfaculty_conf_password);
+        inputFlpassword = (EditText) findViewById(R.id.Sfaculty_pass);
+        inputFlConfPass = (EditText) findViewById(R.id.Sfaculty_conf_pass);
         flSignupButton = (Button) findViewById(R.id.faculty_signupbt);
 
         mFirebaseInstance = FirebaseDatabase.getInstance();
@@ -41,7 +41,6 @@ public class FacultySignupActivity extends AppCompatActivity {
                 String flfullname = inputFlfullname.getText().toString();
                 String flemail = inputFlemail.getText().toString();
                 String flpassword = inputFlpassword.getText().toString();
-
                 if (TextUtils.isEmpty(inputFlfullname.getText())) {
                     inputFlfullname.setError("This field is required");
                 } else if (TextUtils.isEmpty(inputFlemail.getText())) {
@@ -50,7 +49,7 @@ public class FacultySignupActivity extends AppCompatActivity {
                     inputFlpassword.setError("This field is required");
                 } else if(inputFlpassword.getText().toString().equals( inputFlConfPass.getText().toString())) {
 
-                    createStSignup(flfullname, flemail, flpassword);
+                    createFlSignup(flfullname, flemail, flpassword);
 
                     Toast.makeText(getApplicationContext(), "Sign Up successful!",
                             Toast.LENGTH_LONG).show();
@@ -66,10 +65,10 @@ public class FacultySignupActivity extends AppCompatActivity {
         });
     }
 
-    private void createStSignup(String stid, String stemail, String stpassword) {
-        String key = mFirebaseDatabase.push().getKey();
-        StSignup newStSignup = new StSignup(inputFlfullname.getText().toString(), inputFlemail.getText().toString(), inputFlpassword.getText().toString());
-        mFirebaseDatabase.child(key).setValue(newStSignup);
+    private void createFlSignup(String flfullname, String flemail, String flpassword) {
+        //String key = mFirebaseDatabase.push().getKey();
+        FlSignup newFlSignup = new FlSignup(inputFlfullname.getText().toString(), inputFlemail.getText().toString(), inputFlpassword.getText().toString());
+        mFirebaseDatabase.child(flemail).setValue(newFlSignup);
         finish();
     }
 }

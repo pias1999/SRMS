@@ -2,13 +2,13 @@ package com.example.srms;
 
 public class StBasicInfo {
 
-        public String stid;
-        public String fullname;
-        public String dept;
-        public String fathersname;
-        public String mothersname;
-        public String guardcont;
-        public String studcont;
+    public String stid;
+    public String fullname;
+    public String dept;
+    public String fathersname;
+    public String mothersname;
+    public String guardcont;
+    public String studcont;
 
 
     public StBasicInfo(String stid, String fullname, String dept, String fathersname, String mothersname, String guardcont, String studcont) {
