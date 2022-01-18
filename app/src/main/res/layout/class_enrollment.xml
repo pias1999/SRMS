@@ -20,7 +20,7 @@
             android:textSize="55dp"
             android:textStyle="bold" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <!--<com.google.android.material.textfield.TextInputLayout
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
             android:layout_gravity="center"
             android:text="Search"
             android:clickable="true"/>
-
+-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/all_courses_rv"
         android:layout_width="match_parent"
