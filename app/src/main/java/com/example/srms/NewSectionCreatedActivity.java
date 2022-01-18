@@ -20,7 +20,7 @@ public class NewSectionCreatedActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(NewSectionCreatedActivity.this, CreateNewClassActivity.class);
+                Intent i = new Intent(NewSectionCreatedActivity.this, FacultyHomeActivity.class);
                 startActivity(i);
             }
         });

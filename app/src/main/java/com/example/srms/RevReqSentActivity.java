@@ -20,7 +20,7 @@ public class RevReqSentActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(RevReqSentActivity.this, MakeRevReqActivity.class);
+                Intent i = new Intent(RevReqSentActivity.this, StudentHomeActivity.class);
                 startActivity(i);
             }
         });

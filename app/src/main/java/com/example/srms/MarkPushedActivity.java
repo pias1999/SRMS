@@ -19,7 +19,7 @@ public class MarkPushedActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MarkPushedActivity.this, AssessmentMarksActivity.class);
+                Intent i = new Intent(MarkPushedActivity.this, FacultyHomeActivity.class);
                 startActivity(i);
             }
         });

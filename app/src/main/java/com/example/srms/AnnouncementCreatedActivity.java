@@ -20,7 +20,7 @@ public class AnnouncementCreatedActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(AnnouncementCreatedActivity.this, NewAnnouncementActivity.class);
+                Intent i = new Intent(AnnouncementCreatedActivity.this, FacultyHomeActivity.class);
                 startActivity(i);
             }
         });
