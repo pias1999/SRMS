@@ -48,6 +48,15 @@ public class CreateNewClass {
     public void setInstructor(String instructor) {
         this.instructor = instructor;
     }
+
+    @Override
+    public String toString() {
+        return "CreateNewClass{" +
+                "coursecode='" + coursecode + '\'' +
+                ", section='" + section + '\'' +
+                ", instructor='" + instructor + '\'' +
+                '}';
+    }
 }
 
 

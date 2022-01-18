@@ -48,5 +48,10 @@
             android:text="Search"
             android:clickable="true"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/all_courses_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-    </LinearLayout>
+
+</LinearLayout>
