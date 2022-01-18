@@ -20,7 +20,7 @@ public class FacultyHomeActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(FacultyHomeActivity.this, FacultyLoginActivity.class);
+                Intent i = new Intent(FacultyHomeActivity.this, MainActivity.class);
                 startActivity(i);
             }
         });

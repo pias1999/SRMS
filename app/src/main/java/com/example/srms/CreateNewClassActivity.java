@@ -67,10 +67,10 @@ public class CreateNewClassActivity extends AppCompatActivity {
     }
 
     private void createCreateNewClass(String coursetitle, String coursecode, String section, String instructor) {
-        String key =mFirebaseDatabase.push().getKey();
+        //String key =mFirebaseDatabase.push().getKey();
         CreateNewClass newClass = new CreateNewClass(inputCoursetitle.getText().toString(), inputCoursecode.getText().toString(),
                 inputSection.getText().toString(), inputInstructor.getText().toString());
-        mFirebaseDatabase.child(key).setValue(newClass);
+        mFirebaseDatabase.child(coursecode).setValue(newClass);
         finish();
     }
 }
