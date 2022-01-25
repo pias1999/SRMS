@@ -98,7 +98,7 @@
                 android:layout_gravity="center"
                 android:backgroundTint="#3F51B5"
                 android:clickable="true"
-                android:text="Enrol" />
+                android:text="Enroll" />
 
 
         </LinearLayout>
