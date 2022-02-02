@@ -13,6 +13,8 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.io.PrintStream;
+
 public class CreateNewClassActivity extends AppCompatActivity {
 
 
@@ -56,7 +58,7 @@ public class CreateNewClassActivity extends AppCompatActivity {
 
                     createCreateNewClass(coursetitle, coursecode, section, instructor);
 
-                    Toast.makeText(getApplicationContext(), "New section created syccessfully!",
+                    Toast.makeText(getApplicationContext(), "New section created successfully!",
                             Toast.LENGTH_LONG).show();
 
                     Intent i = new Intent(CreateNewClassActivity.this, NewSectionCreatedActivity.class);
